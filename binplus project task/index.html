@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  DUMMY PROJECT </title>
+   
+  
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+<!--<link rel="stylesheet" href="css/style.css"> -->
+
+<style>  
+    /*css Reset */
+   body{
+       color: white;  
+       margin: 0px;
+       padding: 0px;
+       background: url(img/bg1.webp);
+   }
+   .left{
+        position:absolute;
+     /*   border: 2px solid purple; */ 
+        left: 34px;
+        top: 20px;     
+        display: inline-block;
+   }
+   .mid{
+   /* border: 2px solid pink;   */
+    margin: 20px auto;
+    width: 33%;
+    display: block;
+    
+   }   
+  .right{
+    position:absolute;
+/*    border: 2px solid purple; */
+    display: inline-block;  
+    right: 34px;
+    top: 51px;
+  }
+ 
+  .logo{
+
+   
+    right: 30px;
+    width: 116px;
+    height: 85px;
+    filter: invert(100%);
+    border-radius: 19px;
+    
+  }
+  .left div{
+    text-align: center;
+  }
+
+  .navbar{
+
+       display: inline-block;
+  }
+  .navbar li{
+
+      padding: 34px 23px;
+      display: inline-block;
+      font-size: 13px;
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar li a:hover,  .navbar li a.active{
+       text-decoration: underline;
+       color: grey;
+}
+.btn{
+    font-family: 'baloo bhai',cursive;
+    margin: 5px;
+    background-color: black;
+    color: white;
+    padding: 3px 14px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 95px;
+}
+.btn:hover{
+    background-color: rgb(56, 39, 39);
+}
+.container{
+   /* border: 2px solid green; */
+    margin: 106px 85px;
+    padding: 75px;
+   /* width: 33%;*/
+    border-radius: 28px;
+}
+/*
+.form-group input{
+
+        text-align: center;
+        display: block;
+        padding: 1px;
+        width: 508px;
+        border: 2px solid black; 
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+        font-family: 'baloo bhai', cursive;
+}
+.container h1{
+     text-align: center;
+}
+
+ .container button{
+     display: block;
+     width: 74%;
+     margin: auto;
+ }  
+
+*/
+.addFriend{
+    max-width: 1480px;
+}
+.addFriend__container{
+    display: flex;
+    width:100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.addFriend__person{
+    max-width: 327px;
+    padding:0 20px;
+    margin:20px 20px 0 0;
+}
+.addFriend__img img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    border-radius: 33px;
+}
+.addfriend__name{
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    display: block;
+    font-weight: bold;
+    width: 100%;
+    margin-left: 18px;
+}
+.addFriend__btn{
+    border: 1px solid #000;
+    border-radius: 5px;
+    background: #1e669f;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    color: #000;
+    cursor: pointer;
+    color: white;
+}
+
+.search{
+    max-width: 1480px;
+    display: flex;
+    flex-direction: row;
+}
+.search__friend{
+    width: 75%;
+    
+}
+.search__friend input{
+    width:100%;
+    padding:20px;
+    margin: 7px 11px 56px 145px;
+    border-radius: 55px;
+}
+.search__btn{
+    width:20%;
+   /* border: 1px solid #000;*/
+    border-radius: 5px;
+    background: rgb(190 20 176 / 5%);
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    color:#000;
+    cursor: pointer;
+    margin-left: 5%;
+}
+div button{
+    height: 36px;
+    width: 67px;
+    background-color: #e087eb;
+    border-radius: 17px;
+    color: white
+     
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+</style>
+
+<body>
+       
+     
+
+    <header class="header">
+        <!-- left box for logo -->
+       <div class="left">
+        <img src="img/logo.jpg" alt="image does not find" class="logo">
+       <div>REALBOOK</div>
+          
+  </div>
+    <!-- mid box for logo -->
+
+       <div class="mid">
+        <ul class="navbar">
+            <li><a href="#">PROFILE</a></li>
+            <li><a href="#">FRIEND  LIST</a></li>
+            <li><a href="#">POST</a></li>
+            <li><a href="#">NOTIFICATION</a></li>
+            <li><a href="#">CHAT</a></li>
+        </ul>
+       </div>
+    
+       <!-- right box for logo -->
+
+       <div class="right">
+           <button class="btn">Login </button>
+           <button class="btn">Logout</button>
+
+       </div>
+    </header>
+
+     <div class="container">
+         <div class="search">
+             <form action="">
+                 <div class="search__friend"><input type="text" placeholder="Search"></div>
+                 <div class="search__btn">
+                     <button class="button">Search</button>
+                    </div>
+             </form>
+         </div>
+          <div class="addFriend">
+              <div class="addFriend__container">
+                  <div class="addFriend__person">
+                      <div class="addFriend__img"><img src="img/logo.jpg"></div>
+                      <div class="addfriend__name">shameem khan</div>
+                      <div class="addFriend__btn">Add Friend</div>
+                  </div>
+                  <div class="addFriend__person">
+                    <div class="addFriend__img"><img src="img/logo.jpg"></div>
+                    <div class="addfriend__name">ravi</div>
+                    <div class="addFriend__btn">Add Friend</div>
+                </div>
+                <div class="addFriend__person">
+                    <div class="addFriend__img"><img src="img/logo.jpg"></div>
+                    <div class="addfriend__name">zeeshan</div>
+                    <div class="addFriend__btn">Add Friend</div>
+                </div>
+                <div class="addFriend__person">
+                    <div class="addFriend__img"><img src="img/logo.jpg"></div>
+                    <div class="addfriend__name">kartik</div>
+                    <div class="addFriend__btn">Add Friend</div>
+                </div>
+                <div class="addFriend__person">
+                    <div class="addFriend__img"><img src="img/logo.jpg"></div>
+                    <div class="addfriend__name">mahesh</div>
+                    <div class="addFriend__btn">Add Friend</div>
+                </div>
+                <div class="addFriend__person">
+                    <div class="addFriend__img"><img src="img/logo.jpg"></div>
+                    <div class="addfriend__name">rajeev</div>
+                    <div class="addFriend__btn">Add Friend</div>
+                </div>
+                <div class="addFriend__person">
+                    <div class="addFriend__img"><img src="img/logo.jpg"></div>
+                    <div class="addfriend__name">raju</div>
+                    <div class="addFriend__btn">Add Friend</div>
+                </div>
+                <div class="addFriend__person">
+                    <div class="addFriend__img"><img src="img/logo.jpg"></div>
+                    <div class="addfriend__name">anurag</div>
+                    <div class="addFriend__btn">Add Friend</div>
+                </div>
+                <div class="addFriend__person">
+                    <div class="addFriend__img"><img src="img/logo.jpg"></div>
+                    <div class="addfriend__name">ankit</div>
+                    <div class="addFriend__btn">Add Friend</div>
+                </div>
+              </div>
+          </div>
+           
+     </div>
+
+</body>
+</html>
